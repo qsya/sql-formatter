@@ -163,3 +163,7 @@ npm run check
 [mariadb]: https://mariadb.com/
 [mysql]: https://www.mysql.com/
 [tsql]: https://docs.microsoft.com/en-us/sql/sql-server/
+
+versions:
+- **2021-09-09** - [修复[xx]变成[ xx ]问题][]
+- **2022-04-14** - [修复`xx`变成` xx `，a-b变成a - b问题, @#等][]

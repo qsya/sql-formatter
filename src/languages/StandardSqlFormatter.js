@@ -366,12 +366,13 @@ export default class StandardSqlFormatter extends Formatter {
       reservedNewlineWords,
       reservedTopLevelWordsNoIndent,
       // stringTypes: [`""`, "''"],
-      stringTypes: [`""`, "''", '{}', '[]'],
+      stringTypes: [`""`, "''", '{}', '[]', '``'],
       openParens: ['(', 'CASE'],
       closeParens: [')', 'END'],
       indexedPlaceholderTypes: ['?'],
       namedPlaceholderTypes: [],
-      lineCommentTypes: ['--'],
+      specialWordChars: ['@', '#', '-'],
+      lineCommentTypes: [`--`],
     });
   }
 }
