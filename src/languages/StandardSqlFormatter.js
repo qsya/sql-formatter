@@ -371,7 +371,7 @@ export default class StandardSqlFormatter extends Formatter {
       closeParens: [')', 'END'],
       indexedPlaceholderTypes: ['?'],
       namedPlaceholderTypes: [],
-      specialWordChars: ['@', '#', '-'],
+      specialWordChars: ['@', '#', '-', '/', '\\', '|'],
       lineCommentTypes: [`--`],
     });
   }
