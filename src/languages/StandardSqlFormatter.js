@@ -369,10 +369,10 @@ export default class StandardSqlFormatter extends Formatter {
       stringTypes: [`""`, "''", '{}', '[]', '``'],
       openParens: ['(', 'CASE'],
       closeParens: [')', 'END'],
-      indexedPlaceholderTypes: ['?'],
-      namedPlaceholderTypes: [],
-      specialWordChars: ['@', '#', '-'],
-      lineCommentTypes: [`--`],
+      indexedPlaceholderTypes: ['?'], //前后有空格
+      namedPlaceholderTypes: [], //前有空格，后无，单个/时//会分开
+      specialWordChars: ['@', '#', '/', '|', '\\', '-'], //前后无空格
+      lineCommentTypes: [`--`] //前有空格，后无，单个/时//不会分开
     });
   }
 }
